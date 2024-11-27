@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    overflow: auto;
+    padding: 4rem;
+    margin-bottom: 2rem;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible; */
+}
+
+.card{
+    height: 34rem;
+    width: 25rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 15px 5px rgb(155,155,155);
+}
+
+.top{
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+.top button{
+    color: #fff;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: green;
+}
+
+.top h3{
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+.profile-pic{
+    height: 200px;
+    width: 200px;
+    /* background-color: black; */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px 5px gray ;
+}
+
+.profile-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-info{
+    /* background-color: aqua; */
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info h1{
+    font-size: 1.5rem;
+}
+
+.profile-info h2{
+    font-size: 1rem;
+    color: gray;
+}
+
+.profile-info a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: blue;
+    text-decoration: none;
+}
+
+.btn{
+    margin-top: 1.3rem;
+}
+
+.btn button{
+    background-color: #fff;
+    border: 2px solid blue;
+    border-radius: 1.5rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    font-size: 1.5rem;
+}
+
+.btn span button{
+    background-color: blue;
+    color: #fff;
+}
+
+.bottom-para p{
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: grey;
+}
+
+.view-profile h1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.line{
+    background-color: grey;
+    height: 2px;
+    width: 80%;
+    margin-top: 1rem;
+}
