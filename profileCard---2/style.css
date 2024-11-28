@@ -70,3 +70,17 @@ button{
 button:active{
     scale: 0.9;
 }
+
+.green-btn{
+    background-color: green;
+}
+.blue-btn{
+    background-color: rgb(0, 183, 255);
+}
+
+.green-txt{
+    color: green;
+}
+.blue-txt{
+    color: "";
+}

@@ -45,8 +45,8 @@ users.forEach(function(dets,idx){
         <img src="${dets.image}" alt="">
         <h1>${dets.userName}</h1>
         <h3>${dets.age}</h3>
-        <h4>${dets.status}</h4>
-        <button id="${idx}">Add Friend</button>
+        <h4 class="${dets.isfriend? "green-txt" : "blue-txt"}">${dets.status}</h4>
+        <button class="${dets.isfriend? "green-btn" : "blue-btn"}" id="${idx}">Add Friend</button>
     </div>`
 
 var body = document.querySelector("body");
@@ -61,10 +61,10 @@ var body = document.querySelector("body")
 body.addEventListener("click",function(dets){
     if(users[dets.target.id].status === "Stranger"){
         users[dets.target.id].status = "Friends"
-        // users[dets.target.id].isfriend = true;
+        users[dets.target.id].isfriend = true;
     } else {
         users[dets.target.id].status = "Stranger"
-        // users[dets.target.id].isfriend = false;
+        users[dets.target.id].isfriend = false;
     }
 
     eventBublling();
